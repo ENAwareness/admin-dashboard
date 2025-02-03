@@ -21,30 +21,106 @@ main {
 }
 aside {
   color: aliceblue;
-  background-color: rgb(25, 146, 212);
+  background-color: #1992d4;
   min-height: 100%;
 }
 aside img {
-    filter: invert(100%);
-    height: 1.2em;
-    vertical-align: middle;
-    width: auto;
+  filter: invert(100%);
+  height: 1.2em;
+  vertical-align: middle;
+  width: auto;
 }
 h2 {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 20px 0 40px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 0 40px 20px;
 }
 
 nav li {
-    display: flex;
-    align-items: center;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    gap: 16px;
-    font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  gap: 16px;
+  font-weight: bold;
 }
 .nav-divider {
-    padding-top: 20px;
+  padding-top: 20px;
+}
+#header {
+  box-shadow: 0px 5px 5px #ccd1d9;
+  background-color: white;
+}
+#input-form {
+  display: flex;
+  box-sizing: content-box;
+  height: 25px;
+  gap: 16px;
+  padding: 20px 0 0 20px;
+}
+input {
+  background-color: #e2e8f0;
+  border-radius: 50px;
+  width: 30em;
+  border: none;
+}
+#top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#user-info {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 20px 20px 0 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+#user-info img {
+  height: 40px;
+}
+#user-info button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+#user-info button img {
+  height: 20px;
+  width: 20px;
+}
+#bottom-header {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  align-items: center;
+  gap: 100px
+}
+#three {
+  display: flex;
+  gap: 8px;
+}
+#three img {
+  height: 50px;
+  /* border: 2px solid ; */
+  border-radius: 50px;
+}
+span {
+  font-size: 12px;
+  font-weight: bold;
+}
+#four {
+  display: flex;
+  gap: 24px;
+}
+.header-btn {
+  border-radius: 50px;
+  background-color: #1992d4;
+  color: aliceblue;
+  border: none;
+  padding: 8px 16px;
+  height: 36px;
+  width: 86px;
+  font-weight: bold;
 }
