@@ -27,33 +27,36 @@
           </nav>
         </aside>
         <main>
-          <div id="header">
+          <header id="header">
             <div id="top-header">
               <div id="input-form">
-                <img src="./icons/magnify.svg" alt="" />
+                <img src="./icons/magnify.svg" alt="search icon" />
                 <input type="text" />
               </div>
               <div id="user-info">
-                <button><img src="./icons/bell-outline.svg" alt="notification icon" id="notification"></button>
-                <img src="./icons/avatar-icon-images-4.jpg" alt="">
-                <div>Morgen Oakley</div>
+                <!--这个按钮是通知按钮，只有图标没有文字，因此需要 aria-label 来告诉屏幕阅读器它的功能-->
+                <button aria-label="notifications">
+                  <img src="./icons/bell-outline.svg" alt="bell icon for notifications" id="notifications" />
+                </button>
+                <img src="./icons/avatar-icon-images-4.jpg" alt="user avatar" />
+                <h4>Morgen Oakley</h4>
               </div>
             </div>
             <div id="bottom-header">
-              <div id="three">
-                <img src="./icons/avatar-icon-images-4.jpg" alt="" />
+              <div id="user-greeting">
+                <img src="./icons/avatar-icon-images-4.jpg" alt="user avatar" />
                 <div id="greeting">
                   <span>Hi, there,</span>
                   <h3>Morgan Oakley(@morgan)</h3>
                 </div>
               </div>
-              <div id="four">
+              <div id="header-action">
                 <button class="header-btn">New</button>
                 <button class="header-btn">Upload</button>
                 <button class="header-btn">Share</button>
               </div>
             </div>
-          </div>
+          </header>
         </main>
       </div>
     </div>
