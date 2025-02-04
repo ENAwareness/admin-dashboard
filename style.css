@@ -138,6 +138,9 @@ main {
   display: flex;
   flex: 1;
 }
+#projection-section {
+  flex: 6;
+}
 #grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -158,3 +161,37 @@ main {
   border: none;
   background: none;
 }
+#right-sidebar {
+  flex: 4;
+  margin: 20px;
+  min-width: 300px;
+}
+#sidebar-card-border {
+  background-color: white;
+  padding: 0 20px 0 20px;
+  border-radius: 10px;
+  margin: 10px 0 20px 0;
+  box-shadow: 5px 5px 5px #ccd1d9;
+}
+
+.sidebar-card {
+  padding: 20px;
+  position: relative; /*Ensure positioning context for pseudo-element*/
+}
+
+/* Add a separator line after each card except the last one */
+.sidebar-card + .sidebar-card::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-top: -30px;
+  margin-bottom: 20px; 
+}
+
+.sidebar-card p {
+  font-size: 12px;
+  margin-top: 4px;
+  color: #636363;
+}
+
