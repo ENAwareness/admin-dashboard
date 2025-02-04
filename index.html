@@ -7,26 +7,28 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div id="container">
+    <div id="wrapper">
       <div id="content">
-        <aside>
-          <h2><img src="./icons/view-dashboard.svg" alt="icon dashboard" />Dashboard</h2>
-          <nav id="nav-side">
-            <ul>
-              <li><img src="./icons/home.svg" alt="icon home" />Home</li>
-              <li><img src="./icons/card-account-details.svg" alt="icon profile" />Profile</li>
-              <li><img src="./icons/message.svg" alt="icon messages" />Messages</li>
-              <li><img src="./icons/clock-time-three-outline.svg" alt="icon history" />History</li>
-              <li><img src="./icons/file-document-multiple-outline.svg" alt="icon tasks" />Tasks</li>
-              <li><img src="./icons/account-group.svg" alt="icon communities" />Communities</li>
-              <li class="nav-divider" aria-hidden="true"></li>
-              <li><img src="./icons/cog.svg" alt="icon settings" />Settings</li>
-              <li><img src="./icons/help-box-outline.svg" alt="icon support" />Support</li>
-              <li><img src="./icons/shield-check-outline.svg" alt="icon privacy" />Privacy</li>
-            </ul>
-          </nav>
-        </aside>
-        <main>
+        <div id="sidebar">
+          <aside>
+            <h2><img src="./icons/view-dashboard.svg" alt="icon dashboard" />Dashboard</h2>
+            <nav id="nav-side">
+              <ul>
+                <li><img src="./icons/home.svg" alt="icon home" />Home</li>
+                <li><img src="./icons/card-account-details.svg" alt="icon profile" />Profile</li>
+                <li><img src="./icons/message.svg" alt="icon messages" />Messages</li>
+                <li><img src="./icons/clock-time-three-outline.svg" alt="icon history" />History</li>
+                <li><img src="./icons/file-document-multiple-outline.svg" alt="icon tasks" />Tasks</li>
+                <li><img src="./icons/account-group.svg" alt="icon communities" />Communities</li>
+                <li class="nav-divider" aria-hidden="true"></li>
+                <li><img src="./icons/cog.svg" alt="icon settings" />Settings</li>
+                <li><img src="./icons/help-box-outline.svg" alt="icon support" />Support</li>
+                <li><img src="./icons/shield-check-outline.svg" alt="icon privacy" />Privacy</li>
+              </ul>
+            </nav>
+          </aside>
+        </div>
+        <div id="right-content">
           <header id="header">
             <div id="top-header">
               <div id="input-form">
@@ -57,7 +59,78 @@
               </div>
             </div>
           </header>
-        </main>
+          <main id="content-container">
+            <div id="project-section">
+              <h3>Your Projects</h3>
+              <div id="grid-container">
+                <div class="project-card">
+                  <h4 class="grid-group">Super Cool Project</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, tenetur!</p>
+                  <div class="btn-action">
+                    <button><img src="./icons/star-outline.svg" alt="star icon" /></button>
+                    <button><img src="./icons/eye-plus-outline.svg" alt="eye icon" /></button>
+                    <button><img src="./icons/transit-connection-variant.svg" alt="" /></button>
+                  </div>
+                </div>
+                <div class="project-card">
+                  <h4 class="grid-group">Less Cool Project</h4>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam dolore temporibus facilis rerum.
+                  </p>
+                  <div class="btn-action">
+                    <button><img src="./icons/star-outline.svg" alt="star icon" /></button>
+                    <button><img src="./icons/eye-plus-outline.svg" alt="eye icon" /></button>
+                    <button><img src="./icons/transit-connection-variant.svg" alt="" /></button>
+                  </div>
+                </div>
+                <div class="project-card">
+                  <h4 class="grid-group">Impossible App</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, tenetur!</p>
+                  <div class="btn-action">
+                    <button><img src="./icons/star-outline.svg" alt="star icon" /></button>
+                    <button><img src="./icons/eye-plus-outline.svg" alt="eye icon" /></button>
+                    <button><img src="./icons/transit-connection-variant.svg" alt="" /></button>
+                  </div>
+                </div>
+                <div class="project-card">
+                  <h4 class="grid-group">Easy Peasy App</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, tenetur!</p>
+                  <div class="btn-action">
+                    <button><img src="./icons/star-outline.svg" alt="star icon" /></button>
+                    <button><img src="./icons/eye-plus-outline.svg" alt="eye icon" /></button>
+                    <button><img src="./icons/transit-connection-variant.svg" alt="" /></button>
+                  </div>
+                </div>
+                <div class="project-card">
+                  <h4 class="grid-group">Ad Blocker</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, tenetur!</p>
+                  <div class="btn-action">
+                    <button><img src="./icons/star-outline.svg" alt="star icon" /></button>
+                    <button><img src="./icons/eye-plus-outline.svg" alt="eye icon" /></button>
+                    <button><img src="./icons/transit-connection-variant.svg" alt="" /></button>
+                  </div>
+                </div>
+                <div class="project-card">
+                  <h4 class="grid-group">Money Maker</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, tenetur!</p>
+                  <div class="btn-action">
+                    <button><img src="./icons/star-outline.svg" alt="star icon" /></button>
+                    <button><img src="./icons/eye-plus-outline.svg" alt="eye icon" /></button>
+                    <button><img src="./icons/transit-connection-variant.svg" alt="" /></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="right-sidebar">
+              <div id="announcement">
+                <h4>Announcement</h4>
+              </div>
+              <div id="trending">
+                <h4>Trending</h4>
+              </div>
+            </div>
+          </main>
+        </div>
       </div>
     </div>
   </body>

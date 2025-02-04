@@ -3,15 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+html, body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
   background-color: black;
 }
 main {
   background-color: rgb(226, 232, 240);
 }
-#container {
+#wrapper {
   width: 80%;
   margin: 0 auto;
+  height: 100vh;
 }
 #content {
   height: 100vh;
@@ -47,6 +52,11 @@ nav li {
 }
 .nav-divider {
   padding-top: 20px;
+}
+#right-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 #header {
   box-shadow: 0px 5px 5px #ccd1d9;
@@ -95,7 +105,7 @@ input {
   justify-content: space-around;
   padding: 20px;
   align-items: center;
-  gap: 100px
+  gap: 100px;
 }
 #user-greeting {
   display: flex;
@@ -123,4 +133,28 @@ span {
   height: 36px;
   width: 86px;
   font-weight: bold;
+}
+main {
+  display: flex;
+  flex: 1;
+}
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.project-card {
+  background-color: white;
+}
+.btn-action {
+  display: flex;
+  justify-content: end;
+  padding: 30px;
+  gap: 18px;
+}
+.btn-action button {
+  display: flex;
+  width: 20px;
+  border: none;
+  background: none;
 }
