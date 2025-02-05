@@ -10,9 +10,6 @@ html, body {
   margin: 0;
   background-color: black;
 }
-main {
-  background-color: rgb(226, 232, 240);
-}
 #wrapper {
   width: 80%;
   margin: 0 auto;
@@ -135,24 +132,40 @@ span {
   font-weight: bold;
 }
 main {
+  background-color: rgb(226, 232, 240);
   display: flex;
-  flex: 1;
+  height: 100vh;
 }
-#projection-section {
+#project-section {
+  margin: 20px 0 20px 20px;
   flex: 6;
+  overflow-y: auto;
 }
 #grid-container {
+  margin-top: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 20px;
 }
 .project-card {
   background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 30px 30px;
+  border-left: 10px solid #f0b429;
+  position: relative;
+}
+.project-card p{
+  margin-bottom: 20px;
 }
 .btn-action {
   display: flex;
-  justify-content: end;
-  padding: 30px;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
   gap: 18px;
 }
 .btn-action button {
@@ -193,5 +206,24 @@ main {
   font-size: 12px;
   margin-top: 4px;
   color: #636363;
+}
+#trending-card-group {
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+.trending-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0 20px 20px;
+}
+.trending-card img{
+  height: 40px;
+}
+.trending-card .user-info p{
+  line-height: 1;
+  opacity: 0.5;
+  letter-spacing: -0.5px;
 }
 
